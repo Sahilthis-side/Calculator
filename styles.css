@@ -1,0 +1,72 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent{
+    border-radius: 20px;;
+    background: #17181a;
+    height: 590px;
+    width: 315px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    border: none;
+    width : 60px;
+    height : 60px;
+    margin : 5px;
+    font-size: 25px;
+    border-radius: 20px;
+    transition: background-color 0.3s , box-shadow 0.3s ease;
+}
+.number{
+    background-color: #303136;
+    color: #2992da;
+}
+.operator{
+    background-color: #005db2;
+    color: #2b93f3;
+}
+.extra{
+    background-color: #606060;
+    color: #7c7e80;
+}
+.equal{
+    width: 280px;
+    background-color: #1991ff;
+    color: #8ec9ff;
+}
+input{
+    background-color: transparent;
+    border: none;
+    width: 280px;
+    height: 45px;
+    margin: 3px;
+    text-align: right;
+    font-size: 25px;
+    color: #9ebed3;
+    border-radius: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    /* direction: rtl; Set text direction to right-to-left */
+    animation: slideToLeft 5s linear infinite;
+}
+.inputblank{
+    height: 80px;
+    font-size: 55px;
+    font-weight: 400;
+}
+.resultblank{
+    margin-bottom: 8px;
+    font-weight: 10;
+    color: rgba(158, 190, 211, 0.5);
+}
+button:hover, button:active{
+    background-color: transparent;
+    color: aquamarine;
+    box-shadow: 0 0 10px 3px rgba(0, 93, 178, 0.8);
+}
